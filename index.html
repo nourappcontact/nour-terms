@@ -22,8 +22,8 @@
     h3 { font-size: 15px; color: #5DCAA5; margin-bottom: 8px; margin-top: 16px; font-weight: 500; }
     p { font-size: 14px; color: #0F6E56; line-height: 1.7; margin-bottom: 10px; }
     ul { padding-left: 20px; margin-bottom: 10px; }
-    li { font-size: 14px; color: #0F6E56; line-height: 1.7; margin-bottom: 4px; }
     .ar ul, .ar li { direction: rtl; }
+    li { font-size: 14px; color: #0F6E56; line-height: 1.7; margin-bottom: 4px; }
     .highlight { color: #1D9E75; font-weight: 500; }
     .footer { text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid #1a3d1e; }
     .footer p { font-size: 12px; color: #085041; }
@@ -41,14 +41,14 @@
     </div>
 
     <div class="tabs">
-      <button class="tab active" onclick="showLang('ar')">العربية</button>
-      <button class="tab" onclick="showLang('es')">Español</button>
-      <button class="tab" onclick="showLang('en')">English</button>
+      <button class="tab active" onclick="showLang('ar', event)">العربية</button>
+      <button class="tab" onclick="showLang('es', event)">Español</button>
+      <button class="tab" onclick="showLang('en', event)">English</button>
     </div>
 
     <!-- ══ ÁRABE ══ -->
     <div id="content-ar" class="content active ar" dir="rtl">
-      <p class="date">آخر تحديث: أبريل ٢٠٢٦</p>
+      <p class="date">آخر تحديث: مايو ٢٠٢٦</p>
 
       <div class="section">
         <h2>١. قبول الشروط</h2>
@@ -62,9 +62,284 @@
           <li>مسبحة رقمية وأذكار</li>
           <li>أوقات الصلاة الدقيقة حسب الموقع</li>
           <li>آيات قرآنية وأحاديث</li>
+          <li>بوصلة القبلة والمساجد القريبة</li>
+          <li>قاموس إسلامي وجرة الصدقة</li>
+          <li>وضع رمضان مع إشعارات السحور والإفطار</li>
           <li>وضع تعليمي للأطفال (نور Jr.) بإشراف الوالدين</li>
           <li>لوحة متابعة للوالدين</li>
         </ul>
+      </div>
+
+      <div class="section">
+        <h2>٣. الحسابات والوصول</h2>
+        <h3>حساب الوالدين</h3>
+        <p>يتطلب إنشاء حساب بريد إلكتروني وكلمة مرور. أنت مسؤول عن الحفاظ على سرية بيانات الدخول.</p>
+        <h3>وضع الطفل</h3>
+        <p>يمكن للأطفال الوصول إلى التطبيق برمز مكوّن من ٦ أرقام يولّده الوالد. يتحمل الوالد المسؤولية الكاملة عن استخدام الطفل للتطبيق.</p>
+      </div>
+
+      <div class="section">
+        <h2>٤. الاشتراكات والمدفوعات</h2>
+        <p>بعض الميزات تتطلب اشتراكاً مدفوعاً يُدار عبر Google Play. نقدم الخطط التالية:</p>
+        <ul>
+          <li><span class="highlight">مجاني (Free):</span> الميزات الأساسية للوالدين — التسبيح والصلاة والقرآن والقبلة والصدقة</li>
+          <li><span class="highlight">عائلي (Family):</span> يضيف وضع الطفل الكامل حتى ٣ أطفال — ١٫٩٩€ شهرياً أو ١٧٫٩٩€ سنوياً</li>
+          <li><span class="highlight">عائلي بلس (Family+):</span> أطفال غير محدودين + إحصائيات متقدمة + تذكيرات مخصصة — ٢٫٩٩€ شهرياً أو ٢٤٫٩٩€ سنوياً</li>
+        </ul>
+        <ul>
+          <li>تتوفر تجربة مجانية لمدة ٧ أيام لأي خطة مدفوعة</li>
+          <li>تُجدَّد الاشتراكات تلقائياً ما لم تُلغَ قبل ٢٤ ساعة من انتهاء الفترة الحالية</li>
+          <li>لا تُرد المبالغ المدفوعة إلا وفق سياسات Google Play</li>
+          <li>يمكن إلغاء الاشتراك في أي وقت من إعدادات متجر التطبيقات</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>٥. الاستخدام المقبول</h2>
+        <p>يوافق المستخدم على عدم:</p>
+        <ul>
+          <li>استخدام التطبيق لأغراض غير مشروعة</li>
+          <li>محاولة اختراق أو تعطيل خدمات التطبيق</li>
+          <li>انتحال هوية شخص آخر</li>
+          <li>نشر محتوى مسيء أو ضار</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>٦. الملكية الفكرية</h2>
+        <p>جميع محتويات التطبيق — بما في ذلك التصميم والنصوص والبرمجيات — هي ملك لـ Nour Digital وتخضع لقوانين حقوق الملكية الفكرية. لا يحق للمستخدم نسخ أو توزيع أي جزء من التطبيق دون إذن مسبق.</p>
+        <p>النصوص القرآنية والأحاديث النبوية مصدرها مصادر إسلامية موثوقة وتُستخدم للأغراض التعليمية.</p>
+      </div>
+
+      <div class="section">
+        <h2>٧. إخلاء المسؤولية</h2>
+        <p>يُقدَّم التطبيق "كما هو" دون ضمانات من أي نوع. لا تتحمل Nour Digital المسؤولية عن أي أضرار ناتجة عن استخدام التطبيق أو عدم توفره.</p>
+        <p>أوقات الصلاة المحسوبة تقريبية وقد تختلف قليلاً عن التوقيت الرسمي في منطقتك.</p>
+      </div>
+
+      <div class="section">
+        <h2>٨. التعديلات على الشروط</h2>
+        <p>تحتفظ Nour Digital بحق تعديل هذه الشروط في أي وقت. سيُعلَم المستخدمون بالتغييرات الجوهرية عبر التطبيق. الاستمرار في استخدام التطبيق بعد التعديلات يعني الموافقة عليها.</p>
+      </div>
+
+      <div class="section">
+        <h2>٩. إنهاء الخدمة</h2>
+        <p>يحق لـ Nour Digital تعليق أو إنهاء حسابك في حال انتهاك هذه الشروط. يمكنك حذف حسابك في أي وقت بالتواصل معنا على <span class="highlight">nourappdigital@gmail.com</span></p>
+      </div>
+
+      <div class="section">
+        <h2>١٠. القانون المطبق</h2>
+        <p>تخضع هذه الشروط لقوانين الاتحاد الأوروبي. أي نزاع يُحسم وفق القانون الإسباني.</p>
+      </div>
+
+      <div class="section">
+        <h2>١١. التواصل معنا</h2>
+        <p>لأي استفسار حول هذه الشروط:<br/><span class="highlight">nourappdigital@gmail.com</span></p>
+      </div>
+    </div>
+
+    <!-- ══ ESPAÑOL ══ -->
+    <div id="content-es" class="content" dir="ltr">
+      <p class="date">Última actualización: mayo 2026</p>
+
+      <div class="section">
+        <h2>1. Aceptación de los términos</h2>
+        <p>Al usar Nour, aceptas cumplir estos términos. Si no estás de acuerdo con alguno de ellos, por favor no uses la app.</p>
+      </div>
+
+      <div class="section">
+        <h2>2. Descripción del servicio</h2>
+        <p>Nour es una app islámica familiar que ofrece:</p>
+        <ul>
+          <li>Tasbih digital y dhikrs</li>
+          <li>Tiempos de rezo precisos por ubicación</li>
+          <li>Versículos del Corán y hadices</li>
+          <li>Brújula Qibla y mezquitas cercanas</li>
+          <li>Diccionario islámico y Jarra de Sadaqah</li>
+          <li>Modo Ramadán con notificaciones de Suhoor e Iftar</li>
+          <li>Modo educativo para niños (نور Jr.) supervisado por padres</li>
+          <li>Panel de seguimiento para padres</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>3. Cuentas y acceso</h2>
+        <h3>Cuenta de padres</h3>
+        <p>Requiere email y contraseña. Eres responsable de mantener la confidencialidad de tus credenciales.</p>
+        <h3>Modo hijo</h3>
+        <p>Los niños acceden con un código de 6 dígitos generado por el padre. El padre es responsable del uso del niño en la app.</p>
+      </div>
+
+      <div class="section">
+        <h2>4. Suscripciones y pagos</h2>
+        <p>Algunas funcionalidades requieren suscripción de pago gestionada a través de Google Play. Ofrecemos los siguientes planes:</p>
+        <ul>
+          <li><span class="highlight">Gratis (Free):</span> funcionalidades básicas para padres — tasbih, rezos, Corán, Qibla y Sadaqah</li>
+          <li><span class="highlight">Family:</span> añade el modo niño completo para hasta 3 hijos — 1,99€/mes o 17,99€/año</li>
+          <li><span class="highlight">Family+:</span> hijos ilimitados + estadísticas avanzadas + recordatorios personalizados — 2,99€/mes o 24,99€/año</li>
+        </ul>
+        <ul>
+          <li>Disponible prueba gratuita de 7 días en cualquier plan de pago</li>
+          <li>Las suscripciones se renuevan automáticamente salvo cancelación 24h antes del fin del período</li>
+          <li>Los reembolsos se rigen por las políticas de Google Play</li>
+          <li>Puedes cancelar en cualquier momento desde los ajustes del mercado de apps</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>5. Uso aceptable</h2>
+        <p>El usuario se compromete a no:</p>
+        <ul>
+          <li>Usar la app con fines ilegales</li>
+          <li>Intentar vulnerar o interrumpir los servicios</li>
+          <li>Suplantar la identidad de otra persona</li>
+          <li>Publicar contenido ofensivo o dañino</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>6. Propiedad intelectual</h2>
+        <p>Todo el contenido de la app — diseño, textos y código — es propiedad de Nour Digital y está protegido por las leyes de propiedad intelectual. No está permitido copiar o distribuir ninguna parte de la app sin autorización previa.</p>
+        <p>Los textos coránicos y hadices provienen de fuentes islámicas de confianza y se usan con fines educativos.</p>
+      </div>
+
+      <div class="section">
+        <h2>7. Limitación de responsabilidad</h2>
+        <p>La app se ofrece "tal cual" sin garantías de ningún tipo. Nour Digital no se hace responsable de ningún daño derivado del uso o la no disponibilidad de la app.</p>
+        <p>Los tiempos de rezo calculados son aproximados y pueden diferir ligeramente del horario oficial de tu zona.</p>
+      </div>
+
+      <div class="section">
+        <h2>8. Modificaciones de los términos</h2>
+        <p>Nour Digital se reserva el derecho de modificar estos términos en cualquier momento. Los cambios sustanciales se comunicarán a través de la app. El uso continuado tras las modificaciones implica su aceptación.</p>
+      </div>
+
+      <div class="section">
+        <h2>9. Terminación del servicio</h2>
+        <p>Nour Digital puede suspender o eliminar tu cuenta en caso de incumplimiento de estos términos. Puedes eliminar tu cuenta en cualquier momento contactando con <span class="highlight">nourappdigital@gmail.com</span></p>
+      </div>
+
+      <div class="section">
+        <h2>10. Ley aplicable</h2>
+        <p>Estos términos se rigen por la legislación de la Unión Europea. Cualquier disputa se resolverá conforme al derecho español.</p>
+      </div>
+
+      <div class="section">
+        <h2>11. Contacto</h2>
+        <p>Para cualquier consulta sobre estos términos:<br/><span class="highlight">nourappdigital@gmail.com</span></p>
+      </div>
+    </div>
+
+    <!-- ══ INGLÉS ══ -->
+    <div id="content-en" class="content" dir="ltr">
+      <p class="date">Last updated: May 2026</p>
+
+      <div class="section">
+        <h2>1. Acceptance of terms</h2>
+        <p>By using Nour, you agree to be bound by these terms. If you do not agree with any of them, please do not use the app.</p>
+      </div>
+
+      <div class="section">
+        <h2>2. Description of service</h2>
+        <p>Nour is a family Islamic app that provides:</p>
+        <ul>
+          <li>Digital tasbih and dhikrs</li>
+          <li>Accurate prayer times by location</li>
+          <li>Quranic verses and hadiths</li>
+          <li>Qibla compass and nearby mosques</li>
+          <li>Islamic dictionary and Sadaqah Jar</li>
+          <li>Ramadan mode with Suhoor and Iftar notifications</li>
+          <li>Educational mode for children (نور Jr.) supervised by parents</li>
+          <li>Parent tracking dashboard</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>3. Accounts and access</h2>
+        <h3>Parent account</h3>
+        <p>Requires email and password. You are responsible for maintaining the confidentiality of your credentials.</p>
+        <h3>Child mode</h3>
+        <p>Children access the app with a 6-digit code generated by the parent. The parent is responsible for the child's use of the app.</p>
+      </div>
+
+      <div class="section">
+        <h2>4. Subscriptions and payments</h2>
+        <p>Some features require a paid subscription managed through Google Play. We offer the following plans:</p>
+        <ul>
+          <li><span class="highlight">Free:</span> core parent features — tasbih, prayer times, Quran, Qibla and Sadaqah</li>
+          <li><span class="highlight">Family:</span> adds full child mode for up to 3 children — €1.99/month or €17.99/year</li>
+          <li><span class="highlight">Family+:</span> unlimited children + advanced statistics + personalised reminders — €2.99/month or €24.99/year</li>
+        </ul>
+        <ul>
+          <li>7-day free trial available on any paid plan</li>
+          <li>Subscriptions renew automatically unless cancelled 24h before the end of the current period</li>
+          <li>Refunds are governed by Google Play policies</li>
+          <li>You can cancel at any time from the app store settings</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>5. Acceptable use</h2>
+        <p>The user agrees not to:</p>
+        <ul>
+          <li>Use the app for illegal purposes</li>
+          <li>Attempt to breach or disrupt the services</li>
+          <li>Impersonate another person</li>
+          <li>Post offensive or harmful content</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>6. Intellectual property</h2>
+        <p>All app content — design, text and code — is the property of Nour Digital and is protected by intellectual property laws. Copying or distributing any part of the app without prior authorisation is not permitted.</p>
+        <p>Quranic texts and hadiths come from trusted Islamic sources and are used for educational purposes.</p>
+      </div>
+
+      <div class="section">
+        <h2>7. Limitation of liability</h2>
+        <p>The app is provided "as is" without warranties of any kind. Nour Digital is not responsible for any damages arising from the use or unavailability of the app.</p>
+        <p>Calculated prayer times are approximate and may differ slightly from the official schedule in your area.</p>
+      </div>
+
+      <div class="section">
+        <h2>8. Modifications to terms</h2>
+        <p>Nour Digital reserves the right to modify these terms at any time. Substantial changes will be communicated through the app. Continued use after modifications implies acceptance.</p>
+      </div>
+
+      <div class="section">
+        <h2>9. Termination of service</h2>
+        <p>Nour Digital may suspend or delete your account in case of breach of these terms. You can delete your account at any time by contacting <span class="highlight">nourappdigital@gmail.com</span></p>
+      </div>
+
+      <div class="section">
+        <h2>10. Applicable law</h2>
+        <p>These terms are governed by European Union law. Any dispute will be resolved under Spanish law.</p>
+      </div>
+
+      <div class="section">
+        <h2>11. Contact</h2>
+        <p>For any queries about these terms:<br/><span class="highlight">nourappdigital@gmail.com</span></p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>نور · Nour Digital · 2026</p>
+      <p style="margin-top:8px"><a href="https://nourappcontact.github.io/nour-privacy/">Privacy Policy · Política de Privacidad · سياسة الخصوصية</a></p>
+    </div>
+  </div>
+
+  <script>
+    function showLang(lang, event) {
+      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+      document.getElementById('content-' + lang).classList.add('active');
+      event.target.classList.add('active');
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>        </ul>
       </div>
 
       <div class="section">
